@@ -5,7 +5,7 @@ import { Footer } from "./shared/Footer";
 import { AboutPage } from "./AboutPage/AboutPage";
 import { AuthorsPage } from "./AuthorsPage/AuthorsPage";
 import { HomePage } from "./HomePage/HomePage";
-import { Post } from "./Post/Post";
+import { PostPage } from "./PostPage/PostPage";
 
 const NotFoundPage = () => <h2 className="m-5 p-5 text-center">Page not found</h2>;
 
@@ -14,12 +14,11 @@ function App() {
     <Fragment>
       <Header />
       <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/post/:id/" component={Post} />
-        <Route exact path="/about" component={AboutPage} />
-        <Route exact path="/authors" component={AuthorsPage} />
-        <Route exact path="/not-found" component={NotFoundPage} />
-        <Redirect from="/" to="/not-found" />
+        <Route exact path="/" component={HomePage} />        
+        <Route path="/about" component={AboutPage} />
+        <Route path="/authors" component={AuthorsPage} />
+        <Route path="/posts/:id" component={PostPage} />
+        <Route path="*" component={NotFoundPage} />
       </Switch>
       <Footer />
     </Fragment>

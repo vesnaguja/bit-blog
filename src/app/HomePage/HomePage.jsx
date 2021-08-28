@@ -15,7 +15,7 @@ export const HomePage = () => {
 
   return (
     <>
-      <h1 className="p-5 mt-2 text-center">POSTS</h1>
+      <h1 className="pt-5 mt-5 text-center">POSTS</h1>
       <ListGroup variant="flush">
         <Container>
           {posts.map((post) => (

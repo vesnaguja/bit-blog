@@ -1,6 +1,6 @@
 export const AboutPage = () => {
   return (
-    <div className="p-5 m-2 text-center">
+    <div className="pt-5 mt-5 text-center">
       <h2>ABOUT</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius libero nobis at molestias asperiores veritatis possimus debitis ducimus obcaecati ex, soluta ipsam eveniet quod, suscipit culpa vero? Ab, labore mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt vero totam similique iusto provident voluptatum illum repudiandae porro praesentium numquam? Impedit, ipsum laudantium! Voluptatem, id? Nemo sint doloremque cum deleniti.
       Quasi ipsam ea facere quod doloribus suscipit aspernatur ratione fugit laboriosam? Doloremque, consectetur quis ex accusamus, quas harum sunt quod deleniti nobis soluta illum non sequi odit laudantium! Id, facilis!
