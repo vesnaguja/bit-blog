@@ -5,14 +5,7 @@ const url = 'https://jsonplaceholder.typicode.com';
 export const getPosts = () => {
   return fetch(`${url}/posts`)
     .then(response => response.json())
-    .then(posts => {
-      return posts.map(post => {
-        return {
-          title: post.title,
-          body: post.body
-        }
-      })
-    })
+    .then(posts => posts.slice(0, 4))
 }
 
 export const getPost = (id) => {
