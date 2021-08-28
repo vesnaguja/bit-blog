@@ -13,8 +13,8 @@ export const getMorePosts = (userId) => {
     .then(userPosts => {
       return userPosts.slice(0, 3).map(post => {
         return {
-          id: userPosts.id,
-          title: userPosts.title
+          id: post.id,
+          title: post.title
         }
       });
     });
