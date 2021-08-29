@@ -11,11 +11,6 @@ export const getMorePosts = (userId) => {
   return fetch(`${url}/users/${userId}/posts`)
     .then(response => response.json())
     .then(userPosts => {
-      return userPosts.slice(0, 3).map(post => {
-        return {
-          id: post.id,
-          title: post.title
-        }
-      });
+      return userPosts.sort(() => 0.5 - Math.random()).slice(0, 3);
     });
 };
