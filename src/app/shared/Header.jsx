@@ -9,9 +9,9 @@ export const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>
-            <Link className="me-3 text-decoration-none " to="/">Home</Link>
-            <Link className="me-3 text-decoration-none" to="/authors">Authors</Link>
-            <Link className="text-decoration-none" to="/about">About</Link>
+            <Link className="me-3 text-decoration-none text-dark" to="/">Home</Link>
+            <Link className="me-3 text-decoration-none text-dark" to="/authors">Authors</Link>
+            <Link className="text-decoration-none text-dark" to="/about">About</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
