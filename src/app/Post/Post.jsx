@@ -1,14 +1,21 @@
 import { Link } from "react-router-dom";
 import { ListGroup } from "react-bootstrap";
+import {capitalFirstLetter} from "../../shared/functions.js";
+import {shortenPostBody} from "../../shared/functions.js";
+
 
 export const Post = (props) => {
-  console.log(props);
   return (
-    <Link className="text-decoration-none" to={`/${props.post.id}`}>
-      <ListGroup.Item className="border-0 border-bottom">
-        <h2>Title {props.post.id}</h2>
-        <p>{props.post.body[0].toUpperCase() + props.post.body.slice(1, 140).trim() + "..."}</p>
-      </ListGroup.Item>
-    </Link>
+    <ListGroup.Item className="border-0 border-bottom">
+      <Link className="text-decoration-none" to={`/posts/${props.post.id}`}>
+        <h3 className="d-inline-block text-dark">
+          {capitalFirstLetter(`${props.post.title}`)}
+        </h3>
+      </Link>
+      <p>{shortenPostBody(`${props.post.body}`)}</p>
+    </ListGroup.Item>
   );
 };
+
+
+
