@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Redirect, Switch, Route } from "react-router";
+import { Switch, Route } from "react-router";
 import { Header } from "./shared/Header";
 import { Footer } from "./shared/Footer";
 import { AboutPage } from "./AboutPage/AboutPage";
