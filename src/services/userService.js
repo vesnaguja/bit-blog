@@ -14,3 +14,11 @@ export const getMorePosts = (userId) => {
       return userPosts.sort(() => 0.5 - Math.random()).slice(0, 3);
     });
 };
+
+export const getAuthors = () => {
+  return fetch(`${url}/users`)
+    .then(response => response.json())
+    .then(authors => {
+      return authors.sort(() => 0.5 - Math.random()).slice(0, 6);
+    })
+}
