@@ -8,8 +8,8 @@ export const AuthorsPage = () => {
 
   useEffect(() => {
     getAuthors()
-    .then(authors => {
-      setAuthors(authors);
+    .then(authorsData => {
+      setAuthors(authorsData);
     })
     
   }, [])
@@ -19,8 +19,8 @@ export const AuthorsPage = () => {
     <h1 className="pt-5 mt-5 text-center">AUTHORS</h1>
     <ListGroup variant="flush">
         <Container>
-          {authors.map((author) => (            
-            <Author author={author} key={author.userId} />
+          {authors.map((author) => (
+            <Author author={author} key={author.id} />
           ))}
         </Container>
       </ListGroup>
