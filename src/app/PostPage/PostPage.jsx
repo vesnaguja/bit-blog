@@ -38,7 +38,7 @@ export const PostPage = () => {
       <Container>
         <h1 className="text-center">{capitalFirstLetter(`${post.title}`)}</h1>
         <div className="d-flex justify-content-center pt-2 pb-5">
-          <Link className="text-decoration-none" to={`/users/${post.userId}`}>
+          <Link className="text-decoration-none" to={`/authors/${post.userId}`}>
             <h3>{authorName}</h3>
           </Link>
         </div>

@@ -22,3 +22,10 @@ export const getAuthors = () => {
       return authors.sort(() => 0.5 - Math.random()).slice(0, 6);
     })
 }
+
+export const getAuthor = (userId) => {
+  return fetch(`${url}/users/${userId}`)
+    .then(response => response.json())
+    .then(userData => userData);
+};
+
