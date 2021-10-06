@@ -16,6 +16,7 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/bit-blog" component={HomePage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/authors/:userId" component={AuthorPage} />
         <Route exact path="/authors" component={AuthorsPage} />
